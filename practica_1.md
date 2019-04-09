@@ -1,4 +1,4 @@
-# Práctica 1
+# Máquinas de Turing(MT)
 
 1. Responder brevemente los siguientes incisos:
 
