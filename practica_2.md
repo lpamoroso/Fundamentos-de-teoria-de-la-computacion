@@ -10,9 +10,9 @@
 
     Difiere en si para siempre o no. Si el lenguaje es recursivamente enumerable dado un w∉L, M<sub>L</sub> podría parar en q<sub>R</sub> o no parar. Si el lenguaje, en cambio, es recursivo, entonces para siempre: o bien en q<sub>A</sub>, o bien en q<sub>R</sub>.
     
-    3. Probar que R⊆RE⊆*£*.
+    3. Probar que R⊆RE⊆𝓛 .
 
-    Se cumple por definición. Se da que R⊆RE, ya que si un lenguaje posee una MT que con un lenguaje que acepta o rechaza(R), entonces esto entra en la definición de RE, ya que los lenguajes comprendidos allí poseen MT que los aceptan o bien rechazan o bien quedan loopeando. Habiendo probado que R⊆RE, resta probar que RE⊆*£*, lo cual, tambien se prueba del mismo modo, ya que se da que L es el conjunto de todos los lenguajes, sean reconocidos por una MT o no, por lo que RE representa una porción de los lenguajes: aquellos que una MT reconoce y acepta, para o simplemente loopea.
+    Se cumple por definición. Se da que R⊆RE, ya que si un lenguaje posee una MT que con un lenguaje que acepta o rechaza(R), entonces esto entra en la definición de RE, ya que los lenguajes comprendidos allí poseen MT que los aceptan o bien rechazan o bien quedan loopeando. Habiendo probado que R⊆RE, resta probar que RE⊆𝓛 , lo cual, tambien se prueba del mismo modo, ya que se da que L es el conjunto de todos los lenguajes, sean reconocidos por una MT o no, por lo que RE representa una porción de los lenguajes: aquellos que una MT reconoce y acepta, para o simplemente loopea.
 
     4. ¿Cuándo un lenguaje está en la clase CO-RE? ¿Puede un lenguaje estar al mismo tiempo en la clase RE y en la clase CO-RE? ¿Para todo lenguaje de la clase CO-RE existe una MT que lo acepta?
 
