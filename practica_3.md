@@ -1,8 +1,19 @@
 # Jerarquía de la Computabilidad. Problemas indecidibles
 
-1. Recordar cómo probamos en la clase 2 que asumiendo R ⊂ RE se cumple RE ⊂ *£*.
+1. Recordar cómo probamos en la clase 2 que asumiendo R ⊂ RE se cumple RE ⊂ 𝓛 .
 
-2. Probar que los lenguajesL<sub>U</sub> = {(< M >,w) | M acepta w}, y HP = {(< M >,w) | M para sobre w} pertenecen a la clase RE. *Ayuda: las pruebas son similares a la desarrollada en la clase 3 para demostrar que D = {w<sub>i</sub>|M<sub>i</sub> acepta w<sub>i</sub>} ∈ RE.*
+    La idea es encontrar un lenguaje L de RE - R. De esa manera, vale también que RE ⊂ 𝓛, porque deberá ser Lᶜ ∉ RE(si Lᶜ ∉ RE, como L ∈ RE, entonces L ∈ R), por lo que habremos encontrado un lenguaje Lᶜ de 𝓛 - RE.
+
+2. Probar que los lenguajes Lᵤ = {(< M >,w) | M acepta w}, y HP = {(< M >,w) | M para sobre w} pertenecen a la clase RE. *Ayuda: las pruebas son similares a la desarrollada en la clase 3 para demostrar que D = {w<sub>i</sub>|M<sub>i</sub> acepta w<sub>i</sub>} ∈ RE.*
+
+    //CORREGIR
+    Veamos que Lᵤ = {(< M >,w) | M acepta w} ∈ RE
+    
+    La siguiente MT Mᵤ acepta el lenguaje Lᵤ. Dado un input (< M >, w), ejecuta M sobre w, y acepta si y sólo si M acepta a w.
+
+    Veamos que HP = {(< M >,w) | M para sobre w} ∈ RE
+
+    La sigueinte MT M<sub>HP</sub> acepta el lenguaje HP. Dado el input (< M >,w), M sobre w, y acepta si y solo si M para sobre w.
 
 3. Explicar cómo enumeraría los números naturales pares, los números enteros, los números racionales y las cadenas de Ʃ* siendo Ʃ = {0, 1}.
 
