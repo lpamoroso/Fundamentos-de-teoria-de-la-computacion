@@ -17,20 +17,30 @@
 
 3. Explicar cómo enumeraría los números naturales pares, los números enteros, los números racionales y las cadenas de Ʃ* siendo Ʃ = {0, 1}.
 
-4. En la clase 3 se probó que si HP ∈ R entonces R = RE, demostrando que si existe una M<sub>T</sub> M<sub>HP</sub> que decide HP, entonces para cualquier lenguaje L de la clase RE existe una MT M<sub>L</sub> que lo decide. En realidad, sólo se construyó M<sub>L</sub>. Se pide probar que efectivamente M<sub>L</sub> para siempre y que L(ML) = L.
+    //PREGUNTAR. PARA MI LOS CONJUNTOS NO SON NUMERABLES.
 
-5. De la misma manera que en el ejercicio anterior, se pide probar que efectivamente las MTM<sub>G</sub>y M<sub>F</sub> presentadas en la clase 3, deciden la Conjetura de Goldbach y el Ultimo Teorema de Fermat, respectivamente, si se asume que HP es recursivo. En otras palabras, se pide verificar la correctitud de la construcción de ambas MT.
+4. En la clase 3 se probó que si HP ∈ R entonces R = RE, demostrando que si existe una MT M<sub>HP</sub> que decide HP, entonces para cualquier lenguaje L de la clase RE existe una MT M<sub>L</sub> que lo decide. En realidad, sólo se construyó M<sub>L</sub>. Se pide probar que efectivamente M<sub>L</sub> para siempre y que L(M<sub>L</sub>) = L.
+
+    //PREGUNTAR. M<sub>L</sub> PARA SIEMPRE PORQUE EL STRING PASA ANTES POR M<sub>HP</sub> QUE DETERMINA SI PARA O NO. SI M<sub>HP</sub> ACEPTA(LO QUE SIGNIFICA QUE M<sub>1</sub> PARA A PARTIR DE W), EJECUTA M<sub>1</sub> SOBRE W Y ACEPTA SI Y SOLO SI M1 ACEPTA, POR LO QUE M<sub>L</sub> PARA SIEMPRE Y ACEPTA L.
+
+5. De la misma manera que en el ejercicio anterior, se pide probar que efectivamente las MT M<sub>G</sub>y M<sub>F</sub> presentadas en la clase 3, deciden la Conjetura de Goldbach y el Ultimo Teorema de Fermat, respectivamente, si se asume que HP es recursivo. En otras palabras, se pide verificar la correctitud de la construcción de ambas MT.
+
+    //PREGUNTAR. PARA EL CASO DE M<sub>G</sub>, SEA M UNA MT QUE VA OBTENIENDO POR CADA NÚMERO PAR P, LOS 2 PRIMOS QUE SUMADOS DAN P, Y SI PARA UN CASO DE P NO ENCUENTRA LOS 2 PRIMOS, ENTONCES PARA. M<sub>G</sub> SERÍA CORRECTO YA QUE M<sub>G</sub> INVOCARÍA A M<sub>HP</sub> CON EL INPUT (< M >, W). NO IMPORTA EL W, M<sub>HP</sub> NO LO USA. SI M<sub>HP</sub> ACEPTA, ES DECIR, SI M PARA, ENTONCES M<sub>G</sub> RECHAZA Y SI M<sub>HP</sub> RECHAZA, ES DECIR, SI M NO PARA, ENTONCES M<sub>G</sub> ACEPTA.  
+    PARA FERMAT, ES PARECIDO A LO ANTERIOR. SEA M UNA MT QUE VA CHEQUEANDO PARA TODA TUPLA(X, Y, Z, N) CON LAS HIPÓTESIS DADAS, QUE NO CUMPLE LA ECUACIÓN X<sup>N</sup> + Y<sup>N</sup> = Z<sup>N</sup>. SI DETECTA UNA TUPLA QUE LA CUMPLE, ENTONCES PARA. ENTONCES M<sub>F</sub> INVOCA A M<sub>HP</sub> CON INPUT (< M >, W). NO IMPORTA EL W, M<sub>HP</sub> NO LO USA. SI M<sub>HP</sub> ACEPTA, ES DECIR SI M PARA, ENTONCES M<sub>F</sub> RECHAZA Y SI M<sub>HP</sub> RECHAZA, ES DECIR, SI M NO PARA, ENTONCES M<sub>F</sub> ACEPTA.
 
 6. Probar que la MT M<sub>20</sub> construida en la clase 3 para decidir el lenguaje L<sub>20</sub> = {< M > | M es una MT que a partir del input vacío λ nunca sale de las celdas 1 a 20}, efectivamente para siempre y acepta dicho lenguaje.
+
+
 
 7. Probar que la MT M<sub>L</sub> construida en la clase 3 para aceptar L = {< M > | L(M) ≠ ø} efectivamente cumple que L(M<sub>L</sub>) = L.
 
 8. Una función f: A ⟶ B se dice que es total computable, si y sólo si existe una MT M<sub>f</sub> que computa f para todo elemento a ∈ A. Sea la función f<sub>HP</sub> : Ʃ* ⟶{0, 1}, tal que:
     f(x) = 1,si x = (<M>, w) y M para a partir de w
     f(x) = 0,si x = (<M>, w) y M no para a partir de w, o bien x ≠ (< M >, w)
-    Probar que la función f<sub>HP</sub> no es total computable.
 
-Ayuda: Se podría probar que asumiendo que fHPes total computable,se llega a que HP es recursivo.En otras palabras, que se puede construir una MT que decide HP asumiendo que existe una MT que computa totalmente f<sub>HP</sub>.
+Probar que la función f<sub>HP</sub> no es total computable.
+
+Ayuda: Se podría probar que asumiendo que f<sub>HP</sub> es total computable,se llega a que HP es recursivo.En otras palabras, que se puede construir una MT que decide HP asumiendo que existe una MT que computa totalmente f<sub>HP</sub>.
 
 9. Explicar(informal pero claramente) cómo sería una MT que genera la n-ésima fórmula booleana satisfactible, cuya sintaxis contiene variables de la forma x<sub>i</sub>, los operadores lógicos del conjunto {¬, ∧, ∨}, y paréntesis.
 
