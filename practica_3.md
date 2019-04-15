@@ -30,7 +30,7 @@
 
 6. Probar que la MT M<sub>20</sub> construida en la clase 3 para decidir el lenguaje L<sub>20</sub> = {< M > | M es una MT que a partir del input vacío λ nunca sale de las celdas 1 a 20}, efectivamente para siempre y acepta dicho lenguaje.
 
-
+    Definitivamente va a parar siempre porque tiene la limitación en las celdas, es decir, si no para de la 1 a la 20, rechaza; caso contrario, acepta. 
 
 7. Probar que la MT M<sub>L</sub> construida en la clase 3 para aceptar L = {< M > | L(M) ≠ ø} efectivamente cumple que L(M<sub>L</sub>) = L.
 
@@ -52,6 +52,17 @@ Ayuda: Se podría probar que asumiendo que f<sub>HP</sub> es total computable,se
 11. Responder cada uno de los incisos(justificar).
     
     1. ¿Se puede decidir si una MT M, a partir de la cadena vacía λ, escribe alguna vez un símbolo no blanco? Ayuda: ¿Cuántos pasos puede hacer M antes de entrar en loop?
-    2. ¿Se puede decidir si a partir de un input w, una MT M que sólo se mueve a la derecha para? Ayuda: ¿Cuántos pasos puede hacer M antes de entrar en loop?
+
+        No se puede decidir, puede que no lo escriba nunca o que sea el primer símbolo en escribir.
+
+    2. ¿Se puede decidir si a partir de un input w, una MT M que sólo se mueve a la derecha, para? Ayuda: ¿Cuántos pasos puede hacer M antes de entrar en loop?
+
+        No se puede decidir, puede parar en el primer paso o puede parar luego de 352.
+
     3. ¿Se puede decidir si dada una MT M existe un input w a partir del cual M para en a lo sumo 10 pasos? Ayuda: ¿Hasta qué tamaño de cadenas hay que chequear?
-    4. ¿Se puede decidir si dada una MT M existe un input w de a lo sumo 10 símbolos a partir del cual M para? Ayuda: ¿En  este caso se puede acotar la ejecución de M considerando la cantidad de pasos, la cantidad de celdas recorridas u otro parámetro?
+
+        No se puede decidir, es el halting problem.
+
+    4. ¿Se puede decidir si dada una MT M existe un input w de a lo sumo 10 símbolos a partir del cual M para? Ayuda: ¿En este caso se puede acotar la ejecución de M considerando la cantidad de pasos, la cantidad de celdas recorridas u otro parámetro?
+
+        Podría decidirse si se acota a los símbolos con los que para, es decir, si la MT solo acepta a, b y c y el input solo trae caracteres de ese alfabeto, entonces sí, puede decidirse que siempre parará. Si el alfabeto fuera cualquier cosa, no podría decidirse.
