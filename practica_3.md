@@ -53,16 +53,16 @@ Ayuda: Se podría probar que asumiendo que f<sub>HP</sub> es total computable,se
     
     1. ¿Se puede decidir si una MT M, a partir de la cadena vacía λ, escribe alguna vez un símbolo no blanco? Ayuda: ¿Cuántos pasos puede hacer M antes de entrar en loop?
 
-        No se puede decidir, puede que no lo escriba nunca o que sea el primer símbolo en escribir.
+        Si, se puede decidir en a lo sumo Q estados, siendo Q la cantidad de estados.
 
     2. ¿Se puede decidir si a partir de un input w, una MT M que sólo se mueve a la derecha, para? Ayuda: ¿Cuántos pasos puede hacer M antes de entrar en loop?
 
-        No se puede decidir, puede parar en el primer paso o puede parar luego de 352.
+        Se puede decidir. Es, a lo sumo, |w|+Q, siendo |w| el tamaño de la entrada y Q la cantidad máxima de estados.
 
     3. ¿Se puede decidir si dada una MT M existe un input w a partir del cual M para en a lo sumo 10 pasos? Ayuda: ¿Hasta qué tamaño de cadenas hay que chequear?
 
-        No se puede decidir, es el halting problem.
+        Si, se puede decidir calculando la cota máxima de pasos distintos.
 
     4. ¿Se puede decidir si dada una MT M existe un input w de a lo sumo 10 símbolos a partir del cual M para? Ayuda: ¿En este caso se puede acotar la ejecución de M considerando la cantidad de pasos, la cantidad de celdas recorridas u otro parámetro?
 
-        Podría decidirse si se acota a los símbolos con los que para, es decir, si la MT solo acepta a, b y c y el input solo trae caracteres de ese alfabeto, entonces sí, puede decidirse que siempre parará. Si el alfabeto fuera cualquier cosa, no podría decidirse.
+        No se puede decidir ya que esta es la definición de halting problem.
