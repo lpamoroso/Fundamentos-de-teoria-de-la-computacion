@@ -1,8 +1,8 @@
 # Jerarquía de la Computabilidad. Problemas indecidibles
 
-1. Recordar cómo probamos en la clase 2 que asumiendo R ⊂ RE se cumple RE ⊂ 𝓛 .
+1. Recordar cómo probamos en la clase 2 que asumiendo R ⊂ RE se cumple RE ⊂ ℒ .
 
-    La idea es encontrar un lenguaje L de RE - R. De esa manera, vale también que RE ⊂ 𝓛, porque deberá ser Lᶜ ∉ RE(si Lᶜ ∉ RE, como L ∈ RE, entonces L ∈ R), por lo que habremos encontrado un lenguaje Lᶜ de 𝓛 - RE.
+    La idea es encontrar un lenguaje L de RE - R. De esa manera, vale también que RE ⊂ ℒ, porque deberá ser Lᶜ ∉ RE(si Lᶜ ∉ RE, como L ∈ RE, entonces L ∈ R), por lo que habremos encontrado un lenguaje Lᶜ de ℒ - RE.
 
 2. Probar que los lenguajes Lᵤ = {(< M >,w) | M acepta w}, y HP = {(< M >,w) | M para sobre w} pertenecen a la clase RE. *Ayuda: las pruebas son similares a la desarrollada en la clase 3 para demostrar que D = {w<sub>i</sub>|M<sub>i</sub> acepta w<sub>i</sub>} ∈ RE.*
 
