@@ -18,10 +18,13 @@
         Porque la propiedad de simetría no se cumple en reducciones, es decir, sea L ∈ R, se da que L α Lᵤ, pero esto no implica que Lᵤ α L, ya que eso supondría que L es "tan o más dificil" que Lᵤ, y lo cierto es que Lᵤ ∉ R, por lo que claramente Lᵤ es más dificil que L.
 
     5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
+
+        //NO ENTIENDO MUY BIEN LO QUE DICE, PERO, A PRIORI, SE ME OCURRE QUE NO ESTARÍA BIEN PORQUE LA IDEA ERA QUE M\` ACEPTARA W SOLO CUANDO M PARARA SOBRE W, Y EN CASO DE QUE M NO PARARA SOBRE W, TAMPOCO PARARÍA M\`. M<sub>Ʃ*</sub> ES una MT que acepta todas las cadenas, NO ES LO QUE SE BUSCA.
+
     6. Explicar por qué la siguiente MT M<sub>f</sub> no computa una reducción de HP a Lᵤ: dado v:
         * Si v no tiene la forma (<M>, w), entonces M<sub>f</sub> genera el output 1.
         * Si v tiene la forma (<M>,w), entonces M<sub>f</sub> ejecuta M sobre w, y, si M acepta w, entonces genera el output (<M>,w); y, si M rechaza w, entonces genera el output 1.
-
+        
 2. Probar el caso (b) del teorema presentado en clase, que enuncia:
     * Caso (a): Si L1 α L2 entonces L2 ∈ R ⟶ L1 ∈ R.
     * Caso (b): Si L1 α L2 entonces L2 ∈ RE ⟶ L1 ∈ RE.
