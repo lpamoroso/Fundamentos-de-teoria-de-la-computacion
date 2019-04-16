@@ -1,8 +1,14 @@
-Reducciones de problemas. MT restringidas.
+# Reducciones de problemas. MT restringidas
 
 1. Considerando la reducción de HP a Lᵤ descripta en clase, responder:
     1. Explicar por qué la función identidad, es decir la función que a toda cadena le asigna la misma cadena, no es una reducción de HP a Lᵤ.
-    2. Explicar por qué las MT M\` generadas en los pares (<M\`>, w) de Lᵤ, o bien paran aceptando,o bien loopean.
+
+        //PREGUNTAR. PORQUE, PARA MI, LO QUE SE BUSCA ES OTRA COSA. DEFINIENDO F((<M>, W)) = F((<M\`>, W)), SI BIEN M Y M\` SON IDÉNTICAS, LA DIFERENCIA ESTÁ EN QUE LOS Qᵣ DE M SON LOS Qₐ DE M\`.
+
+    2. Explicar por qué las MT M\` generadas en los pares (<M\`>, w) de Lᵤ, o bien paran aceptando, o bien loopean.
+
+        //PREGUNTAR. PORQUE SI M PARA SOBRE W, M\` ACEPTA W PORQUE NO TIENE Qᵣ Y SI M NO PARA SOBRE W, TAMPOCO LO HACE M`.
+
     3. Explicar por qué la función utilizada para reducir HP a Lᵤ también sirve para reducir HPᶜ a Lᵤᶜ.
     4. Explicar por qué la función utilizada para reducir HP a Lᵤ no sirve para reducir Lᵤ a HP.
     5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
