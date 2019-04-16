@@ -21,10 +21,12 @@
 
         //NO ENTIENDO MUY BIEN LO QUE DICE, PERO, A PRIORI, SE ME OCURRE QUE NO ESTARÍA BIEN PORQUE LA IDEA ERA QUE M\` ACEPTARA W SOLO CUANDO M PARARA SOBRE W, Y EN CASO DE QUE M NO PARARA SOBRE W, TAMPOCO PARARÍA M\`. M<sub>Ʃ*</sub> ES una MT que acepta todas las cadenas, NO ES LO QUE SE BUSCA.
 
-    6. Explicar por qué la siguiente MT M<sub>f</sub> no computa una reducción de HP a Lᵤ: dado v:
+    6. Explicar por qué la siguiente MT M<sub>f</sub> no computa una reducción de HP a Lᵤ dado v:
         * Si v no tiene la forma (<M>, w), entonces M<sub>f</sub> genera el output 1.
         * Si v tiene la forma (<M>,w), entonces M<sub>f</sub> ejecuta M sobre w, y, si M acepta w, entonces genera el output (<M>,w); y, si M rechaza w, entonces genera el output 1.
-        
+
+        No computa dado que si la entrada es una cadena válida, para generar <M`>, M<sub>f</sub> debe modificar las 5-tuplas de <M> reemplazando todo estado Qᵣ por Qₐ.
+
 2. Probar el caso (b) del teorema presentado en clase, que enuncia:
     * Caso (a): Si L1 α L2 entonces L2 ∈ R ⟶ L1 ∈ R.
     * Caso (b): Si L1 α L2 entonces L2 ∈ RE ⟶ L1 ∈ RE.
