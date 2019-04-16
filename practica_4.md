@@ -28,10 +28,24 @@
         No computa dado que si la entrada es una cadena válida, para generar <M`>, M<sub>f</sub> debe modificar las 5-tuplas de <M> reemplazando todo estado Qᵣ por Qₐ.
 
 2. Probar el caso (b) del teorema presentado en clase, que enuncia:
-    * Caso (a): Si L1 α L2 entonces L2 ∈ R ⟶ L1 ∈ R.
-    * Caso (b): Si L1 α L2 entonces L2 ∈ RE ⟶ L1 ∈ RE.
+    * Caso (a): Si L₁ α L₂ entonces L₂ ∈ R ⟶ L₁ ∈ R.
+    * Caso (b): Si L₁ α L₂ entonces L₂ ∈ RE ⟶ L₁ ∈ RE.
 
     *Ayuda: basarse en la demostración del caso (a) desarrollada en clase.*
+
+    La idea general es que si existe una MT M<sub>f</sub> que reduce L₁ a L₂, y existe una MT M₂ que acepta L₂, entonces también existe una MT M₁ que acepta L₁: la que ejecuta primero M<sub>f</sub> sobre el input w y luego M₂ sobre el output f(w) de M<sub>f</sub>. Para este caso, en particular, la MT M₂ puede parar o no, y por lo tanto, también la MT M₁.  
+    La prueba formal es la siguiente:
+    * Supongamos que L₁ α L₂ y L₂ ∈ RE. Veamos si se cumple L₁ ∈ RE.
+    * Por la hipótesis:
+        * Existe una MT M<sub>f</sub> que computa una función que cumple w ∈ L₁ ↔ f(w) ∈ L₂.
+        * Existe una MT M₂ que acepta L₂ y puede parar o no.
+    * Así también, existe una MT M₁ que acepta L₁ y puede parar o no, por lo que:
+        * Dado un input w.
+        * M₁ ejecuta primero M<sub>f</sub> sobre w para obtener f(w).
+        * Luego ejecuta M₂ sobre f(w).
+        * Y acepta si y solo si M₂ acepta.
+    * M₁ podría no parar porque M<sub>f</sub> y M₂ tampoco podrían necesariamente parar.
+    * L₁=L(M₁) ya que w ∈ L₁ ↔ M<sub>f</sub>, a partir de w, computa f(w) ∈ L₂ ↔ M₂ acepta f(w) ↔ M₁ acepta w ↔ w ∈ L(M₁).
 
 3. Considerando la reducción de Lᵤ a L<sub>Ʃ*</sub> descripta en clase, responder:
     1. Explicar por qué no sirve como función de reducción la función siguiente: a todo input le asigna como output el código <M<sub>Ʃ*</sub>>.
