@@ -14,6 +14,9 @@
         //PREGUNTAR(SI NO ESTÁ BIEN, PONGO LA DEFINICIÓN DE REDUCCIÓN). PORQUE HAY UNA PROPIEDAD DE REDUCCIONES QUE DICE QUE L₁ α L₂ ↔ HPᶜ a Lᵤᶜ.
 
     4. Explicar por qué la función utilizada para reducir HP a Lᵤ no sirve para reducir Lᵤ a HP.
+
+        Porque la propiedad de simetría no se cumple en reducciones, es decir, sea L ∈ R, se da que L α Lᵤ, pero esto no implica que Lᵤ α L, ya que eso supondría que L es "tan o más dificil" que Lᵤ, y lo cierto es que Lᵤ ∉ R, por lo que claramente Lᵤ es más dificil que L.
+
     5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
     6. Explicar por qué la siguiente MT M<sub>f</sub> no computa una reducción de HP a Lᵤ: dado v:
         * Si v no tiene la forma (<M>, w), entonces M<sub>f</sub> genera el output 1.
