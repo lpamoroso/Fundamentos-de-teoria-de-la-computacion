@@ -10,6 +10,9 @@
         //PREGUNTAR. PORQUE SI M PARA SOBRE W, M\` ACEPTA W PORQUE NO TIENE Qᵣ Y SI M NO PARA SOBRE W, TAMPOCO LO HACE M`.
 
     3. Explicar por qué la función utilizada para reducir HP a Lᵤ también sirve para reducir HPᶜ a Lᵤᶜ.
+
+        //PREGUNTAR(SI NO ESTÁ BIEN, PONGO LA DEFINICIÓN DE REDUCCIÓN). PORQUE HAY UNA PROPIEDAD DE REDUCCIONES QUE DICE QUE L₁ α L₂ ↔ HPᶜ a Lᵤᶜ.
+
     4. Explicar por qué la función utilizada para reducir HP a Lᵤ no sirve para reducir Lᵤ a HP.
     5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
     6. Explicar por qué la siguiente MT M<sub>f</sub> no computa una reducción de HP a Lᵤ: dado v:
@@ -20,7 +23,7 @@
     * Caso (a): Si L1 α L2 entonces L2 ∈ R ⟶ L1 ∈ R.
     * Caso (b): Si L1 α L2 entonces L2 ∈ RE ⟶ L1 ∈ RE.
 
-    *Ayuda: basarse en la demostración del caso (a)desarrollada en clase.*
+    *Ayuda: basarse en la demostración del caso (a) desarrollada en clase.*
 
 3. Considerando la reducción de Lᵤ a L<sub>Ʃ*</sub> descripta en clase, responder:
     1. Explicar por qué no sirve como función de reducción la función siguiente: a todo input le asigna como output el código <M<sub>Ʃ*</sub>>.
