@@ -15,7 +15,10 @@
 
     4. Explicar por qué la función utilizada para reducir HP a Lᵤ no sirve para reducir Lᵤ a HP.
 
-        Porque la propiedad de simetría no se cumple en reducciones, es decir, sea L ∈ R, se da que L α Lᵤ, pero esto no implica que Lᵤ α L, ya que eso supondría que L es "tan o más dificil" que Lᵤ, y lo cierto es que Lᵤ ∉ R, por lo que claramente Lᵤ es más dificil que L.
+        Igual que en el caso anterior, a priori hay una propiedad que dice que sea L ∈ R, se da que L α Lᵤ, pero esto no implica que Lᵤ α L, ya que eso supondría que L es "tan o más dificil" que Lᵤ, y lo cierto es que Lᵤ ∉ R, por lo que claramente Lᵤ es más dificil que L. Por otro lado, remitiéndonos a la función en sí misma, si tengo que reducir de Lᵤ a HP usando la misma función que usé para reducir de HP a Lᵤ, entonces se da que:
+        * Para el caso en que Lᵤ acepte, no habrá problema.
+        * Si la cadena no es válida tampoco habrá problema.
+        * El problema aparecerá cuando Lᵤ no acepte y la función lo pase a HP aceptando.
 
     5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
 
