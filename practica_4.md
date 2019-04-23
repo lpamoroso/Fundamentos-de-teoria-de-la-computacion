@@ -3,7 +3,7 @@
 1. Considerando la reducción de HP a Lᵤ descripta en clase, responder:
     1. Explicar por qué la función identidad, es decir la función que a toda cadena le asigna la misma cadena, no es una reducción de HP a Lᵤ.
 
-        //PREGUNTAR. PORQUE, PARA MI, LO QUE SE BUSCA ES OTRA COSA. DEFINIENDO F((<M>, W)) = F((<M\`>, W)), SI BIEN M Y M\` SON IDÉNTICAS, LA DIFERENCIA ESTÁ EN QUE LOS Qᵣ DE M SON LOS Qₐ DE M\`.
+        Porque, si bien no hay problema para el caso en que acepta o que es una cadena inválida, cuando se da qᵣ en HP, se va a dar qₐ en Lᵤ, por lo que no se logra que si un elemento está en HP, esté también en Lᵤ.
 
     2. Explicar por qué las MT M\` generadas en los pares (<M\`>, w) de Lᵤ, o bien paran aceptando, o bien loopean.
 
