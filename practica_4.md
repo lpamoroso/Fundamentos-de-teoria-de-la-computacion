@@ -11,7 +11,7 @@
 
     3. Explicar por qué la función utilizada para reducir HP a Lᵤ también sirve para reducir HPᶜ a Lᵤᶜ.
 
-        //PREGUNTAR(SI NO ESTÁ BIEN, PONGO LA DEFINICIÓN DE REDUCCIÓN). PORQUE HAY UNA PROPIEDAD DE REDUCCIONES QUE DICE QUE L₁ α L₂ ↔ HPᶜ a Lᵤᶜ.
+        A priori, hay una propiedad que dice que L₁ α L₂ ↔ L₁ᶜ α L₂ᶜ por lo que puedo usar la misma función de reducción en ambos casos. Más específicamente, en este caso, necesito una función para todo lo que no sea HP y todo lo que no se Lᵤ. Se dan los mismos casos que arriba: si está dentro de HPᶜ, ya sea que rechace o acepte, la función lo cambiará por algo que Lᵤᶜ acepte siempre. Si llega un string inválido, será inválido para ámbos.
 
     4. Explicar por qué la función utilizada para reducir HP a Lᵤ no sirve para reducir Lᵤ a HP.
 
