@@ -7,7 +7,7 @@
 
     2. Explicar por qué las MT M\` generadas en los pares (<M\`>, w) de Lᵤ, o bien paran aceptando, o bien loopean.
 
-        //PREGUNTAR. PORQUE SI M PARA SOBRE W, M\` ACEPTA W PORQUE NO TIENE Qᵣ Y SI M NO PARA SOBRE W, TAMPOCO LO HACE M`.
+        Porque es necesario que Lᵤ acepte siempre que HP para o no. Si el string es inválido, ambas máquinas rechazan.
 
     3. Explicar por qué la función utilizada para reducir HP a Lᵤ también sirve para reducir HPᶜ a Lᵤᶜ.
 
