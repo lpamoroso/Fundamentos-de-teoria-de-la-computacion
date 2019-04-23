@@ -20,9 +20,9 @@
         * Si la cadena no es válida tampoco habrá problema.
         * El problema aparecerá cuando Lᵤ no acepte y la función lo pase a HP aceptando.
 
-    5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
+    5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (\<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
 
-        //NO ENTIENDO MUY BIEN LO QUE DICE, PERO, A PRIORI, SE ME OCURRE QUE NO ESTARÍA BIEN PORQUE LA IDEA ERA QUE M\` ACEPTARA W SOLO CUANDO M PARARA SOBRE W, Y EN CASO DE QUE M NO PARARA SOBRE W, TAMPOCO PARARÍA M\`. M<sub>Ʃ*</sub> ES una MT que acepta todas las cadenas, NO ES LO QUE SE BUSCA.
+        //NO ENTIENDO MUY BIEN LO QUE DICE, PERO, CREO QUE PASA POR EL TEMA QUE TIENE QUE GENERAR ALGO AFUERA DE LU Y (<M<sub>Ʃ*</sub>>, v) NO CORRESPONDE.
 
     6. Explicar por qué la siguiente MT M<sub>f</sub> no computa una reducción de HP a Lᵤ dado v:
         * Si v no tiene la forma (\<M>, w), entonces M<sub>f</sub> genera el output 1.
