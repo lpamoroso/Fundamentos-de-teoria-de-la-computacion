@@ -36,7 +36,7 @@
 
     *Ayuda: basarse en la demostración del caso (a) desarrollada en clase.*
 
-    La idea general es que si existe una MT M<sub>f</sub> que reduce L₁ a L₂, y existe una MT M₂ que acepta L₂, entonces también existe una MT M₁ que acepta L₁: la que ejecuta primero M<sub>f</sub> sobre el input w y luego M₂ sobre el output f(w) de M<sub>f</sub>. Para este caso, en particular, la MT M₂ puede parar o no, y por lo tanto, también la MT M₁.  
+    //PREGUNTAR. La idea general es que si existe una MT M<sub>f</sub> que reduce L₁ a L₂, y existe una MT M₂ que acepta L₂, entonces también existe una MT M₁ que acepta L₁: la que ejecuta primero M<sub>f</sub> sobre el input w y luego M₂ sobre el output f(w) de M<sub>f</sub>. Para este caso, en particular, la MT M₂ puede parar o no, y por lo tanto, también la MT M₁.  
     La prueba formal es la siguiente:
     * Supongamos que L₁ α L₂ y L₂ ∈ RE. Veamos si se cumple L₁ ∈ RE.
     * Por la hipótesis:
