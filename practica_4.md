@@ -3,32 +3,32 @@
 1. Considerando la reducción de HP a Lᵤ descripta en clase, responder:
     1. Explicar por qué la función identidad, es decir la función que a toda cadena le asigna la misma cadena, no es una reducción de HP a Lᵤ.
 
-        Porque, si bien no hay problema para el caso en que acepta o que es una cadena inválida, cuando se da qᵣ en HP, se va a dar qₐ en Lᵤ, por lo que no se logra que si un elemento está en HP, esté también en Lᵤ.
+        Porque, si bien no hay problema para el caso en que acepta, loopea o es una cadena inválida, cuando M para sobre w en qᵣ en HP, el par (<M>,w) ∈ a HP pero ∉ a Lᵤ.
 
     2. Explicar por qué las MT M\` generadas en los pares (<M\`>, w) de Lᵤ, o bien paran aceptando, o bien loopean.
 
-        Porque es necesario que Lᵤ acepte siempre que HP para o no. Si el string es inválido, ambas máquinas rechazan.
+        Porque la propia implementación hace que las máquinas paren aceptando o loopeen ya que cambian el estado qᵣ por qₐ de modo que la máquina siempre acepta en Lᵤ(si aceptaba o rechazaba en HP) o loopea(si ya loopeaba en HP).
 
     3. Explicar por qué la función utilizada para reducir HP a Lᵤ también sirve para reducir HPᶜ a Lᵤᶜ.
 
-        A priori, hay una propiedad que dice que L₁ α L₂ ↔ L₁ᶜ α L₂ᶜ por lo que puedo usar la misma función de reducción en ambos casos. Más específicamente, en este caso, necesito una función para todo lo que no sea HP y todo lo que no se Lᵤ. Se dan los mismos casos que arriba: si está dentro de HPᶜ, ya sea que rechace o acepte, la función lo cambiará por algo que Lᵤᶜ acepte siempre. Si llega un string inválido, será inválido para ámbos.
+        A priori, hay una propiedad que dice que L₁ α L₂ ↔ L₁ᶜ α L₂ᶜ por lo que puedo usar la misma función de reducción en ambos casos. Más específicamente, en este caso, necesito una función para todo lo que no sea HP y todo lo que no sea Lᵤ. Se dan los mismos casos que arriba: si la máquina dentro de HPᶜ rechaza o acepta, la función lo cambiará por algo que Lᵤᶜ acepte siempre. Si llega un w inválido, será inválido para ámbos.
 
     4. Explicar por qué la función utilizada para reducir HP a Lᵤ no sirve para reducir Lᵤ a HP.
 
         Igual que en el caso anterior, a priori hay una propiedad que dice que sea L ∈ R, se da que L α Lᵤ, pero esto no implica que Lᵤ α L, ya que eso supondría que L es "tan o más dificil" que Lᵤ, y lo cierto es que Lᵤ ∉ R, por lo que claramente Lᵤ es más dificil que L. Por otro lado, remitiéndonos a la función en sí misma, si tengo que reducir de Lᵤ a HP usando la misma función que usé para reducir de HP a Lᵤ, entonces se da que:
         * Para el caso en que Lᵤ acepte, no habrá problema.
         * Si la cadena no es válida tampoco habrá problema.
-        * El problema aparecerá cuando Lᵤ no acepte y la función lo pase a HP aceptando.
+        * El problema aparecerá cuando M pare sobre w en qᵣ en Lᵤ y la función convierta ese input en algo que esté dentro de HP y no se cumpla la propiedad de reducción.
 
     5. Explicar por qué si el input v de la MT M<sub>f</sub> que computa la función de reducción no tiene la forma (\<M>, w), no es correcto que M<sub>f</sub> genere, en lugar de la cadena 1, un par de la forma (<M<sub>Ʃ*</sub>>, v), siendo M<sub>Ʃ*</sub> una MT que acepta todas las cadenas.
 
-        //NO ENTIENDO MUY BIEN LO QUE DICE, PERO, CREO QUE PASA POR EL TEMA QUE TIENE QUE GENERAR ALGO AFUERA DE LU Y (<M<sub>Ʃ*</sub>>, v) NO CORRESPONDE.
+        El problema es que M<sub>Ʃ*</sub> es una máquina de Turing que acepta todo, por lo que, le llegue en input que le llegue va parar en qₐ y no se va a cumplir la propiedad de la reducción.
 
     6. Explicar por qué la siguiente MT M<sub>f</sub> no computa una reducción de HP a Lᵤ dado v:
         * Si v no tiene la forma (\<M>, w), entonces M<sub>f</sub> genera el output 1.
         * Si v tiene la forma (\<M>,w), entonces M<sub>f</sub> ejecuta M sobre w, y, si M acepta w, entonces genera el output (\<M>,w); y, si M rechaza w, entonces genera el output 1.
 
-        No computa porque, si v tiene la forma (\<M>,w), entonces M<sub>f</sub> debe, para el caso en que M rechace w, generar algo que Lᵤ acepte, y el output 1 no corresponde.
+        A priori, esta función no es computable porque no tiene en cuenta qué hacer en caso de loops. Suponiendo que fuera computable(que eso se hubiera resuelto de algún modo), la función no reduciría a Lᵤ porque, si v tiene la forma (\<M>,w), M<sub>f</sub> ejecuta M sobre w y M rechaza w, entonces M<sub>f</sub> debe, para el caso en que M rechace w, generar un output que Lᵤ acepte(y 1 no es un output que Lᵤ acepte).
 
 2. Probar el caso (b) del teorema presentado en clase, que enuncia:
     * Caso (a): Si L₁ α L₂ entonces L₂ ∈ R ⟶ L₁ ∈ R.
