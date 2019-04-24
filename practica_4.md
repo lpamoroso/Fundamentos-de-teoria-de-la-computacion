@@ -52,7 +52,12 @@
 
 3. Considerando la reducción de Lᵤ a L<sub>Ʃ*</sub> descripta en clase, responder:
     1. Explicar por qué no sirve como función de reducción la función siguiente: a todo input le asigna como output el código <M<sub>Ʃ*</sub>>.
+
+        El problema está en algo que está afuera de Lᵤ, un w inválido. La función lo transformaría en algo válido y no se cumpliría la función de Lᵤ.
+
     2. Explicar por qué la reducción descripta en clase no sirve para probar que L<sub>Ʃ*</sub> ∉ RE.
+
+        Porque Lᵤ ∈ RE. Para probar que L<sub>Ʃ*</sub> ∉ RE hay que reducirlo usando un lenguaje que ∉ RE.
 
 4. Probar formalmente que las funciones de reducción gozan de la propiedad transitiva.
 *Ayuda: revisar la idea general comentada en clase; también basarse en la prueba que se haya desarrollado para el 2, porque debería ser similar.*
