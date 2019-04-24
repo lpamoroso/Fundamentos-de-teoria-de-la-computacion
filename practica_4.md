@@ -62,11 +62,13 @@
 4. Probar formalmente que las funciones de reducción gozan de la propiedad transitiva.
 *Ayuda: revisar la idea general comentada en clase; también basarse en la prueba que se haya desarrollado para el 2, porque debería ser similar.*
 
+    Hay que probar que si L₁ α L₂ y L₂ α L₃, entonces L₁ α L₃. Para probar tal afirmación voy a construir una MT f1, que representa la función de reducción de L₁, que reciba un par (<M>, w). El input que recibe f1 será procesado por una MT f2, que representa la función de reducción de L₂, que podrá aceptar o rechazar. Si f2 rechaza, f1 también lo hará. Si f2 acepta, el output será procesado por una MT f3, que representará la función de reducción de L₃. Al igual que f2, si f3 rechaza, también lo hará f1. Si f3 acepta, también lo hará f1 y se probará la transitividad.
+
 5. Sea el lenguaje Dₕₚ = {wᵢ | Mipara desde wᵢ, según el orden canónico}. Encontrar una reducción de Dₕₚ a HP.
 
 6. Sea el lenguaje L<sub>∅</sub> = {<M>| L(M) = ∅}. Responder:
     1. Encontrar una reducción de Lᵤᶜ a L<sub>∅</sub>.  
-    *Ayuda: basarse en la idea de la reducción de Lᵤ a L<sub>Ʃ*</sub>, es muy similar.*
+    _Ayuda: basarse en la idea de la reducción de Lᵤ a L<sub>Ʃ*</sub>, es muy similar._
     2. Considerando la reducción desarrollada en (1) ¿Qué se puede decir de L<sub>∅</sub>, a qué clase de la jerarquía de la computabilidad pertenece?
 
 7. Construir un autómata finito que reconozca el lenguaje de las cadenas de {0, 1}*, es decir todas las cadenas de 0 y 1 de cualquier tamaño incluso la vacía, tales que a todo cero le siga un uno.  
