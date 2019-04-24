@@ -75,3 +75,5 @@
 8. Un autómata linealmente acotado(ALA) es una MT con una sola cinta con la restricción de que su cabezal sólo puede leer y escribir en las celdas en que se encuentra el input. Probar que el lenguaje aceptado por un ALA es recursivo.
 
 *Ayuda: ¿En cuántos pasos se puede detectar que el ALA entra en loop?*
+
+    Es recursivo porque puede construirse una MT que siempre para. El truco está en usar una cota de pasos, entonces, el lenguaje acepta si no supera la cota; caso contrario, rechaza.
