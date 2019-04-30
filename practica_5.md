@@ -5,7 +5,10 @@
 
         Porque es la única clase con lenguajes que resuelven problemas para los que sabemos que podemos construir una MT que puede aceptar o rechazar, necesariamente.
     
-    2. Resolvimos de dos maneras el problema de los palíndromos, una con una MT de 1 cinta y otra con una MT con varias cintas. La primera tarda O(n2) pasos y la segunda O(n).Al igual que  para  otros  problemas  que  manifiestan  este  comportamiento,  ¿por  qué  es  indistinta  la cantidad de cintas utilizadas, considerando la jerarquía temporal que definimos?
+    2. Resolvimos de dos maneras el problema de los palíndromos, una con una MT de 1 cinta y otra con una MT con varias cintas. La primera tarda O(n²) pasos y la segunda O(n). Al igual que para otros problemas que manifiestan este comportamiento ¿Por qué es indistinta la cantidad de cintas utilizadas considerando la jerarquía temporal que definimos?
+
+        Porque lo importante es que si el tiempo del problema es polinomial, lo es en una cinta o en k cintas.
+
     3. Probar, utilizando la definición vista en clase, que n3= O(2n).
     4. Vimos que un algoritmo natural para encontrar un divisor que termine en 3 de un número N tarda O(N) pasos. ¿Esto significa que el problema está en P?
     5. Vimos que utilizando una MTN (MT no determinística),un algoritmo natural para encontrar un  circuito  de  Hamilton  en  un  grafo  G  tarda O(n2)  pasos.  ¿Esto  significa  que  el  problema está en P?
