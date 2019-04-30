@@ -9,7 +9,10 @@
 
         Porque lo importante es que si el tiempo del problema es polinomial, lo es en una cinta o en k cintas.
 
-    3. Probar, utilizando la definición vista en clase, que n3= O(2n).
+    3. Probar, utilizando la definición vista en clase, que n³ = O(2ⁿ).
+
+        //PREGUNTAR
+
     4. Vimos que un algoritmo natural para encontrar un divisor que termine en 3 de un número N tarda O(N) pasos. ¿Esto significa que el problema está en P?
     5. Vimos que utilizando una MTN (MT no determinística),un algoritmo natural para encontrar un  circuito  de  Hamilton  en  un  grafo  G  tarda O(n2)  pasos.  ¿Esto  significa  que  el  problema está en P?
     6. El problema de los grafos isomorfos se representa por el lenguaje ISO = {(G1, G2) | G1y G2son grafos isomorfos}. Dos grafos son isomorfos si son idénticos salvo por el orden de sus vértices. P.ej.el cuadrado con arcos (1,2), (2,3), (3,4) y (4,1) es isomorfo al cuadrado conarcos  (1,2),  (2,4),  (4,3)  y  (3,1).  Se  prueba  que  ISO ∈NP. Mostrar  un certificado suscinto que caracterice al problema ISO.
