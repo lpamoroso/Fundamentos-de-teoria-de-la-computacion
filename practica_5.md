@@ -19,7 +19,7 @@
 
     5. Vimos que utilizando una MTN (MT no determinística),un algoritmo natural para encontrar un circuito de Hamilton en un grafo G tarda O(n²) pasos ¿Esto  significa que el problema está en P?
 
-        No, ya que, si bien podemos construir una MT que trabaje en O(n²), lo cierto es que la cantidad de permutaciones es factorial y, por tanto, exponencial, por lo que HC está en NP.
+        No, ya que, si bien podemos construir una MT que compute en O(n²), lo cierto es que la cantidad de permutaciones es factorial y, por tanto, exponencial(solo puede obtenerse el camino fuerza bruta mediante), por lo que HC está en NP.
 
     6. El problema de los grafos isomorfos se representa por el lenguaje ISO = {(G1, G2) | G1y G2son grafos isomorfos}. Dos grafos son isomorfos si son idénticos salvo por el orden de sus vértices. P.ej.el cuadrado con arcos (1,2), (2,3), (3,4) y (4,1) es isomorfo al cuadrado conarcos  (1,2),  (2,4),  (4,3)  y  (3,1).  Se  prueba  que  ISO ∈NP. Mostrar  un certificado suscinto que caracterice al problema ISO.
     7. Ligado  al  inciso  anterior,  considerando  ahora  el  problema  de  los  grafos  no  isomorfos,se pide mostrar un certificado asociadoal problema. ¿Es suscinto?
