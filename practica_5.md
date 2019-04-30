@@ -13,7 +13,10 @@
 
         //PREGUNTAR
 
-    4. Vimos que un algoritmo natural para encontrar un divisor que termine en 3 de un número N tarda O(N) pasos. ¿Esto significa que el problema está en P?
+    4. Vimos que un algoritmo natural para encontrar un divisor que termine en 3 de un número N tarda O(n) pasos ¿Esto significa que el problema está en P?
+
+        El problema de este problema(valga la redundancia) es que dividir es una operación que se prueba tarda tiempo poly(n), pero chequear que un número termina en 3 tarda tiempo O(n). El problema está claramente en NP y se aprecia que, a priori, no parece estar en P. De esto se puede concluir que construir aparentemente es más laborioso que verificar.
+
     5. Vimos que utilizando una MTN (MT no determinística),un algoritmo natural para encontrar un  circuito  de  Hamilton  en  un  grafo  G  tarda O(n2)  pasos.  ¿Esto  significa  que  el  problema está en P?
     6. El problema de los grafos isomorfos se representa por el lenguaje ISO = {(G1, G2) | G1y G2son grafos isomorfos}. Dos grafos son isomorfos si son idénticos salvo por el orden de sus vértices. P.ej.el cuadrado con arcos (1,2), (2,3), (3,4) y (4,1) es isomorfo al cuadrado conarcos  (1,2),  (2,4),  (4,3)  y  (3,1).  Se  prueba  que  ISO ∈NP. Mostrar  un certificado suscinto que caracterice al problema ISO.
     7. Ligado  al  inciso  anterior,  considerando  ahora  el  problema  de  los  grafos  no  isomorfos,se pide mostrar un certificado asociadoal problema. ¿Es suscinto?
