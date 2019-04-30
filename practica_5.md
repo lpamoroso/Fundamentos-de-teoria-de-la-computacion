@@ -21,7 +21,10 @@
 
         No, ya que, si bien podemos construir una MT que compute en O(n²), lo cierto es que la cantidad de permutaciones es factorial y, por tanto, exponencial(solo puede obtenerse el camino fuerza bruta mediante), por lo que HC está en NP.
 
-    6. El problema de los grafos isomorfos se representa por el lenguaje ISO = {(G1, G2) | G1y G2son grafos isomorfos}. Dos grafos son isomorfos si son idénticos salvo por el orden de sus vértices. P.ej.el cuadrado con arcos (1,2), (2,3), (3,4) y (4,1) es isomorfo al cuadrado conarcos  (1,2),  (2,4),  (4,3)  y  (3,1).  Se  prueba  que  ISO ∈NP. Mostrar  un certificado suscinto que caracterice al problema ISO.
+    6. El problema de los grafos isomorfos se representa por el lenguaje ISO = {(G1, G2) | G1 y G2 son grafos isomorfos}. Dos grafos son isomorfos si son idénticos salvo por el orden de sus vértices. Ej: el cuadrado con arcos (1,2), (2,3), (3,4) y (4,1) es isomorfo al cuadrado con arcos (1,2), (2,4), (4,3) y (3,1). Se prueba que ISO ∈ NP. Mostrar un certificado suscinto que caracterice al problema ISO.
+
+        //PREGUNTAR. El tema acá es que si bien verificar si el vértice está donde debe estar, de modo que se cumpla la definición de isomorfo, es algo que se resuelve de forma poly(n), el problema es que hay que hacer tantas permutaciones como vértices haya, y eso se resuelve en exp(n). Queda probado el certificado suscinto.
+
     7. Ligado  al  inciso  anterior,  considerando  ahora  el  problema  de  los  grafos  no  isomorfos,se pide mostrar un certificado asociadoal problema. ¿Es suscinto?
     8. Probar que la clase P es cerrada con respecto a la operación de complemento.
 2. Probar  que  si  T1(n)  =  O(T2(n)),  entonces TIME(T1(n)) TIME(T2(n)).Ayuda:  usar las definiciones estudiadas para probar la inclusión entre los conjuntos indicados.
