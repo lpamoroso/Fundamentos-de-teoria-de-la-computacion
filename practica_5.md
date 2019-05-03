@@ -54,10 +54,19 @@ _Comentario: φ está en la FNC si es una conjunción de disyunciones de variabl
     Para probar que DOM-SET pertenece a P habría que construir una MT que resuelva en tiempo polinomial el problema. Se me ocurre cómo construir la máquina, pero no hay forma de que trabaje de forma polinomial. Lo que se me ocurre es procesar los diferentes conjuntos que pueden formarse con cada vértice, pero esto, de forma general conllevaría V! permutaciones, lo que haría que la MT trabaje de forma exponencial, por lo que no es posible que DOM-SET pertenezca a P.  
     Para probar que DOM-SETC pertenece a NP hay que construir una MTN que resuelva en tiempo polinomial tal problema. La forma de construir tal máquina es la misma que en el caso de DOM-SET para probar que pertenece a NP, solo que en este caso la idea es que todas las ramas fallen en lugar de que al menos una acepte. Si todas las ramas fallan significa que no se ha encontrado un conjunto dominante. En este caso, hay que esperar que todas las ramas terminen su procesamiento, por lo que, en el peor caso, tendremos que esperar por V! permutaciones hasta que la máquina pueda determinar que no existe un conjunto dominante. V! es exponencial, por lo que este problema pertenece a EXP y no a NP.
 
-5. Asumamos que Ʃ* sólotiene cadenas de unos y ceros, pudiendo incluir la cadena vacía λ. En este contexto, dada una cadena w de Ʃ*, se define como E(w) a su cadena espejo, que  es  la  que  se  obtienereemplazando  en  w  los  unos  por  ceros  y  los  ceros  por  unos  (p.ej. E(1001) = 0110y E(λ) = λ), y también se define que L es un lenguaje espejo si se cumple,para toda cadena wdistinta de λ,que w ∈L E(w) ∈LC. Sea f la función que transforma todo w en E(w). Responder, justificando las respuestas:
+5. Asumamos que Ʃ* sólo tiene cadenas de unos y ceros, pudiendo incluir la cadena vacía λ. En este contexto, dada una cadena w de Ʃ*, se define como E(w) a su cadena espejo, que es la que se obtiene reemplazando en w los unos por ceros y los ceros por unos(p.ej. E(1001) = 0110 y E(λ) = λ), y también se define que L es un lenguaje espejo si se cumple, para toda cadena w distinta de λ, que w ∈ L ↔ E(w) ∈ Lᶜ. Sea f la función que transforma todo w en E(w). Responder, justificando las respuestas:
     1. ¿Es f una función total computable?
+
+        Si, dado que existe una MT que computa tal función en su cinta de salida y se detiene. Un ejemplo de tal máquina podría ser una que si detecta que el caracter es 0 lo transforme en 1; caso contrario, lo transforme en 0. Luego que avance a la derecha. Si encuentra un B, significa que ha concluido el procesamiento de w. Eventualmente, por más grande que sea w, f terminará de computarlo, por lo que la función es, a priori, total computable.
+
     2. ¿Cuánto tarda una MT que computa f?
-    3. Si L es un lenguaje espejo, ¿se cumple que f es una reducción polinomial de L a LC?
+
+        Depende de la cantidad de cifras que tenga el número, esto es, la parte entera de ln(w) + 1. Esto es siempre polinómico.
+
+    3. Si L es un lenguaje espejo ¿Se cumple que f es una reducción polinomial de L a Lᶜ?
+
+        Se cumple dado que la función f es total computable y trabaja siempre de forma polinómica.
+
 6. Hemos  construido  en  la  Clase  6 una  reducción  polinomial  del  problema  CH (circuito de Hamilton) al problema TSP (viajante de comercio), es decir CH αPTSP.
     1. Sabiendo que TSP es NP-completo y sin asumir nada sobre CH:
         1. ¿Se cumple que CH ∈NP?
