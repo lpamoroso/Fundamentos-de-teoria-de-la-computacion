@@ -33,7 +33,16 @@
 
         Podría probar esto usando dos MT, M1 y M2, en la que M1 representa una MT que contiene a M2. M1 recibe un input w, el cual es computado por M2. Si M2 acepta, entonces M1 rechaza; y si M2 rechaza, M1 acepta. De esta manera queda probada la operación de complemento. 
 
-2. Probar  que  si  T1(n)  =  O(T2(n)),  entonces TIME(T1(n)) TIME(T2(n)).Ayuda:  usar las definiciones estudiadas para probar la inclusión entre los conjuntos indicados.
+2. Probar que si T₁(n) = O(T₂(n)), entonces TIME(T₁(n)) ⊆ TIME(T₂(n)).
+_Ayuda: usar las definiciones estudiadas para probar la inclusión entre los conjuntos indicados._
+
+    Para probar que esto se cumple, primero hay que plantear algunas definiciones:
+    
+    * Se define que una MT M trabaja en tiempo T(n) si y sólo si para toda entrada w, con |w| = n, M hace a lo sumo T(n) pasos.
+    * Los problemas que pueden ser resueltos por MT que trabajan en tiempo O(T(n)) se agrupan en una misma clase: un problema (o lenguaje) pertenece a la clase TIME(T(n)) si y sólo si existe una MT, con una o más cintas, que lo resuelve o reconoce en tiempo O(T(n)).
+
+    Partiendo de esas definiciones, yo tengo un tiempo T₁(n) que es igual al orden O(T₂(n)). Si ese T₁(n) es igual al orden O(T₂(n)), entonces ese O(T₁(n)), que va a representar al orden correspondiente de T₁(n), es igual al O(T₂(n)). Por definición, un problema o lenguaje pertenece a la clase TIME(T(n)) si y sólo si existe una MT, con una o más cintas, que lo resuelve o reconoce en tiempo O(T(n)). Tenemos un problema resuelto por una MT en O(T₁(n)). Entonces ese problema pertence a la clase TIME(T₁(n)). Del mismo modo, TIME(T₂(n)). Hay que evitar pasar por alto el detalle de que T₁(n) se puede representar con O(T₂(n)). Partiendo de eso, puedo incluir dentro de TIME(T₂(n)) a TIME(T₁(n)) ya que pude representar a T₁(n) con el orden que se usa para T₂(n).
+
 3. Sea el lenguajeSMALL-SAT = {φ | φ es una fórmula booleana sin cuantificadores en  la  forma  normal  conjuntiva(o  FNC),  y  existe  una  asignación  de  valores  de  verdad  que  la satisface  en  la  que  hay  a  lo  sumo 3variables  con  valor  de  verdad  verdadero}. Probar  que SMALL-SAT ∈P.
 _Comentario: φ está en laFNC  si  es  una  conjunción  de  disyunciones  de variables o variables negadas, como p.ej. (x1x2) x4(x3 x5 x6)._
 4. El  problema  del conjunto  dominante de un  grafo  se  representa  por  el  lenguaje DOM-SET  =  {(G,  K)  | G  es  un grafo que  tiene  un  conjunto  dominante  de  K  vértices}.  Un subconjunto de vértices de un grafo G es un conjunto dominante de G, si todootro vértice de G es adyacente a  algún vértice de dicho subconjunto.  Probar que DOM-SET ∈NP. ¿Se cumple que DOM-SET ∈P? ¿Se cumple que DOM-SETC ∈NP? Justificar las respuestas.
