@@ -86,11 +86,11 @@ _Comentario: φ está en la FNC si es una conjunción de disyunciones de variabl
 
             Podría ser, ya que esto implicaría que TSP es tan complejo como CH y podría reducirse ya que seguiríase cumpliendo la definición de reducción.
 
-7. En la Clase 6 quedó planteado como ejercicio probar que si L1 αₚ L2, L1 ∈ NPC y L2 ∈ NP, entonces L2 ∈ NPC. Probarlo.
+7. En la Clase 6 quedó planteado como ejercicio probar que si L₁ αₚ L₂, L₁ ∈ NPC y L₂ ∈ NP, entonces L₂ ∈ NPC. Probarlo.
 
-    No termino de entender el problema, pero reducir de L1 a L2, siendo que L1 ∈ NPC y L2 ∈ NP, a mi me parece que no se puede porque esto implicaría que L2 es tan o más difícil que L1, cosa que no es cierta, ya que los problemas de NP son más fáciles que los de NPC. Dicho de otra manera, NPC es siempre más difícil que NP.  
-    Ahora bien, puede ser que si bien L2 perteneciera a NP, todo problema de NP pudiera reducirse a L2. En este caso, en este caso, L2 pertenece a NP, pero tiene características extras que hacen que también pertenezca a otra clase de problemas: la clase NPC. Esto hace que la reducción sea posible ya que L2 sería tan difícil como L1. Sin embargo, si L2 solo perteneciera a NP, la reducción de L1 a L2 no sería posible.
+    No termino de entender el problema, pero reducir de L₁ a L₂, siendo que L₁ ∈ NPC y L₂ ∈ NP, a mi me parece que no se puede porque esto implicaría que L₂ es tan o más difícil que L₁, cosa que no es cierta, ya que los problemas de NP son más fáciles que los de NPC. Dicho de otra manera, NPC es siempre más difícil que NP.  
+    Ahora bien, puede ser que si bien L₂ perteneciera a NP, todo problema de NP pudiera reducirse a L₂. En este caso, en este caso, L₂ pertenece a NP, pero tiene características extras que hacen que también pertenezca a otra clase de problemas: la clase NPC. Esto hace que la reducción sea posible ya que L₂ sería tan difícil como L₁. Sin embargo, si L₂ solo perteneciera a NP, la reducción de L₁ a L₂ no sería posible.
 
-8. En la Clase 6 quedó planteado como ejercicio probar que si L1 ∈ NPC y L2 ∈ NPC, entonces se cumple tanto L1 αₚ L2 como L2 αₚ L1. Probarlo.
+8. En la Clase 6 quedó planteado como ejercicio probar que si L₁ ∈ NPC y L₂ ∈ NPC, entonces se cumple tanto L₁ αₚ L₂ como L₂ αₚ L₁. Probarlo.
 
-    La única manera de reducir polinomialmente de L1 a L2 y viceversa es que el uno sea tan difícil como el otro, es decir, que ámbos lenguajes pertenezcan a la misma clase. En este caso, tal clase es NPC, pero podría ser cualquier otra siempre y cuando ámbos lenguajes pertenecieran a ella. Se cumple la reducción de L1 a L2 y de L2 a L1, siendo que L1 es tan difícil como L2 así como también L2 es tan difícil como L1.
+    La única manera de reducir polinomialmente de L₁ a L₂ y viceversa es que el uno sea tan difícil como el otro, es decir, que ámbos lenguajes pertenezcan a la misma clase. En este caso, tal clase es NPC, pero podría ser cualquier otra siempre y cuando ámbos lenguajes pertenecieran a ella. Se cumple la reducción de L₁ a L₂ y de L₂ a L₁, siendo que L₁ es tan difícil como L₂ así como también L₂ es tan difícil como L₁.
