@@ -86,7 +86,11 @@ _Comentario: φ está en la FNC si es una conjunción de disyunciones de variabl
 
             Podría ser, ya que esto implicaría que TSP es tan complejo como CH y podría reducirse ya que seguiríase cumpliendo la definición de reducción.
 
-7. En la Clase 6 quedó planteado como ejercicio probar que si L1αPL2, L1∈NPC y L2∈NP, entonces L2∈NPC.Probarlo.
+7. En la Clase 6 quedó planteado como ejercicio probar que si L1 αₚ L2, L1 ∈ NPC y L2 ∈ NP, entonces L2 ∈ NPC. Probarlo.
+
+    No termino de entender el problema, pero reducir de L1 a L2, siendo que L1 ∈ NPC y L2 ∈ NP, a mi me parece que no se puede porque esto implicaría que L2 es tan o más difícil que L1, cosa que no es cierta, ya que los problemas de NP son más fáciles que los de NPC. Dicho de otra manera, NPC es siempre más difícil que NP.  
+    Ahora bien, puede ser que si bien L2 perteneciera a NP, todo problema de NP pudiera reducirse a L2. En este caso, en este caso, L2 pertenece a NP, pero tiene características extras que hacen que también pertenezca a otra clase de problemas: la clase NPC. Esto hace que la reducción sea posible ya que L2 sería tan difícil como L1. Sin embargo, si L2 solo perteneciera a NP, la reducción de L1 a L2 no sería posible.
+
 8. En la Clase 6 quedó planteado como ejercicio probar que si L1∈NPC y L2∈NPC, entonces se cumple tanto L1αPL2comoL2αPL1.Probarlo.
 
 cert suscinto: dos condiciones se veridiica en tiempo polinomial y ocupa espacio polinomial
