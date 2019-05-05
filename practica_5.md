@@ -97,4 +97,6 @@ _Comentario: φ está en la FNC si es una conjunción de disyunciones de variabl
 
 8. En la Clase 6 quedó planteado como ejercicio probar que si L₁ ∈ NPC y L₂ ∈ NPC, entonces se cumple tanto L₁ αₚ L₂ como L₂ αₚ L₁. Probarlo.
 
-    La única manera de reducir polinomialmente de L₁ a L₂ y viceversa es que el uno sea tan difícil como el otro, es decir, que ámbos lenguajes pertenezcan a la misma clase. En este caso, tal clase es NPC, pero podría ser cualquier otra siempre y cuando ámbos lenguajes pertenecieran a ella. Se cumple la reducción de L₁ a L₂ y de L₂ a L₁, siendo que L₁ es tan difícil como L₂ así como también L₂ es tan difícil como L₁.
+    Al ser los dos de NPC, las reducciones se cumplen por definición.
+
+    //PREGUNTAR POR QUÉ EN EL MAIL PUSO NP.
