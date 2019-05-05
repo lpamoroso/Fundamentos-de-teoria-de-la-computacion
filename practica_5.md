@@ -45,10 +45,10 @@ _Ayuda: usar las definiciones estudiadas para probar la inclusión entre los con
 
     Partiendo de esas definiciones, yo tengo un tiempo T₁(n) que es igual al orden O(T₂(n)). Si ese T₁(n) es igual al orden O(T₂(n)), entonces ese O(T₁(n)), que va a representar al orden correspondiente de T₁(n), es igual al O(T₂(n)). Por definición, un problema o lenguaje pertenece a la clase TIME(T(n)) si y sólo si existe una MT, con una o más cintas, que lo resuelve o reconoce en tiempo O(T(n)). Tenemos un problema resuelto por una MT en O(T₁(n)). Entonces ese problema pertence a la clase TIME(T₁(n)). Del mismo modo, TIME(T₂(n)). Hay que evitar pasar por alto el detalle de que T₁(n) se puede representar con O(T₂(n)). Partiendo de eso, puedo incluir dentro de TIME(T₂(n)) a TIME(T₁(n)) ya que pude representar a T₁(n) con el orden que se usa para T₂(n).
 
-3. Sea el lenguaje SMALL-SAT = {φ | φ es una fórmula booleana sin cuantificadores en la forma normal conjuntiva(o FNC), y existe una asignación de valores de verdad que la satisface en la que hay a lo sumo 3 variables con valor de verdad verdadero}. Probar que SMALL-SAT ∈ P.
+3. Sea el lenguaje SMALL-SAT = {φ | φ es una fórmula booleana sin cuantificadores en la forma normal conjuntiva(o FNC), y existe una asignación de valores de verdad que la satisface en la que hay a lo sumo 3 variables con valor de verdad verdadero}. Probar que SMALL-SAT ∈ P.  
 _Comentario: φ está en la FNC si es una conjunción de disyunciones de variables o variables negadas, como p.ej. (x1 ∨ x2) ∧  x4 ∧ (¬x3 ∨ x5 ∨ x6)._
 
-    Se prueba que SMALL-SAT ∈ P dado que existe una cantidad constante de filas que satisfacen la definición de SMALL-SAT. En este caso lo que hay que hacer es listar las filas de verdad y marcar las que cumplan la definición. Siempre será la sumo 3 variables.
+    Se prueba que SMALL-SAT ∈ P dado que hay que considerar m variables(total de variables) tomadas de a uno, de a dos y de a tres, nada más, y esa sumatoria de combinaciones es polinomial. En este caso, lo que marca la diferencia y hace que el problema pueda estar en P es que solo se usa uno, dos y tres en lugar de una variable.
 
 4. El problema del conjunto dominante de un grafo se representa por el lenguaje DOM-SET = {(G, K) | G es un grafo que  tiene un conjunto dominante de K vértices}. Un subconjunto de vértices de un grafo G es un conjunto dominante de G, si todo otro vértice de G es adyacente a algún vértice de dicho subconjunto. Probar que DOM-SET ∈ NP ¿Se cumple que DOM-SET ∈ P? ¿Se cumple que DOM-SETC ∈ NP? Justificar las respuestas.
 
