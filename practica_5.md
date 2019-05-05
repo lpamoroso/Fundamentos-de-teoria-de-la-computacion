@@ -73,20 +73,22 @@ _Comentario: φ está en la FNC si es una conjunción de disyunciones de variabl
     1. Sabiendo que TSP es NP-completo y sin asumir nada sobre CH:
         1. ¿Se cumple que CH ∈ NP?
 
-            Podría ser, dado que los problemas de NP son más fáciles que los de NPC. Si existe la reducción de CH a TSP, significa que TSP es tan o más difícil que CH, por lo que tiene sentido que siendo TSP de NPC, entonces CH sea de NP.
+            Es NP, por propiedad de la reducción polinomial. CH está en NP porque TSP está en NP.
 
         2. ¿Se cumple que CH ∈ NPC?
 
-            Podría ser, porque esto implicaría que CH es tan difícil como TSP y seguiríase cumpliendo la definición de reducción(en este caso, que TSP es tan o más difícil que CH).
+            No se puede asumir de la hipótesis.
 
     2. Sabiendo que CH es NP-completo y sin asumir nada sobre TSP:
         1. ¿Se cumple que TSP ∈ NP?
 
-            Esto es algo que no puede darse, ya que si CH perteneciera a NPC y TSP a NP no podría reducirse de CH a TSP, porque no podría cumplirse que TSP sea tan o más difícil que CH.
+            No se puede inferir nada de la reducción, respecto de NP. Es decir, podría ser que TSP perteneciera a NP siendo TSP NP completo.
+
+            //PREGUNTA SI ESTÁ BIEN. PREGUNTAR QUÉ ES NP DIFÍCIL.
 
         2. ¿Se cumple que TSP ∈ NPC?
 
-            Podría ser, ya que esto implicaría que TSP es tan complejo como CH y podría reducirse ya que seguiríase cumpliendo la definición de reducción.
+            Podría ser, si TSP estuviera en NP y se diera que todo problema de NP fuera reducible a TSP en tiempo polinomial. Si no, otra vez, sólo puede inferir que es NP-difícil.
 
 7. En la Clase 6 quedó planteado como ejercicio probar que si L₁ αₚ L₂, L₁ ∈ NPC y L₂ ∈ NP, entonces L₂ ∈ NPC. Probarlo.
 
