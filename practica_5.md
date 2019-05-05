@@ -63,11 +63,11 @@ _Comentario: φ está en la FNC si es una conjunción de disyunciones de variabl
 
     2. ¿Cuánto tarda una MT que computa f?
 
-        Depende de la cantidad de cifras que tenga el número, esto es, la parte entera de ln(w) + 1. Esto es siempre polinómico.
+        Dado que lo único que hace es invertir, tarda n(es lineal).
 
     3. Si L es un lenguaje espejo ¿Se cumple que f es una reducción polinomial de L a Lᶜ?
 
-        Se cumple dado que la función f es total computable y trabaja siempre de forma polinómica.
+        No, la cadena vacía genera problemas. El lenguaje E(w) puede definirse como su cadena espejo, excepto para λ. El problema va a ser que, cuando el input sea λ, el resultado va a ser λ. El problema es que E(λ) = λ, no puede estar en los dos conjuntos.
 
 6. Hemos construido en la Clase 6 una reducción polinomial del problema CH(circuito de Hamilton) al problema TSP(viajante de comercio), es decir CH αₚ TSP.
     1. Sabiendo que TSP es NP-completo y sin asumir nada sobre CH:
