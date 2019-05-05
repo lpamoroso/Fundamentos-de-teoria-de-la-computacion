@@ -3,19 +3,19 @@
 1. Responder y justificar brevemente las siguientes preguntas conceptuales:
     1. ¿Por qué sólo tiene sentido tratar la complejidad temporal dentro de la clase R?
 
-        Porque es la única clase con lenguajes que resuelven problemas para los que sabemos que podemos construir una MT que puede aceptar o rechazar, necesariamente.
+        Porque hablar de tiempo en MT que podrían loopear no tiene sentido.
     
     2. Resolvimos de dos maneras el problema de los palíndromos, una con una MT de 1 cinta y otra con una MT con varias cintas. La primera tarda O(n²) pasos y la segunda O(n). Al igual que para otros problemas que manifiestan este comportamiento ¿Por qué es indistinta la cantidad de cintas utilizadas considerando la jerarquía temporal que definimos?
 
-        Tanto n como n² lo resuelve en tiempo polinomial.
+        Tanto n como n² se resuelven en tiempo polinomial.
 
     3. Probar, utilizando la definición vista en clase, que n³ = O(2ⁿ).
 
-        Porque, para cualquier valor n, la función n³ está siempre por debajo de 2ⁿ.
+        En este caso, hay que buscar la constante K que hace que el primero se mantenga siempre menor que el segundo. Para K = 10, se da que 10³ = 1000 y 2<sup>10</sup> = 1024. A partir de 10, n³ = O(2ⁿ).
 
-    4. Vimos que un algoritmo natural para encontrar un divisor que termine en 3 de un número N tarda O(n) pasos ¿Esto significa que el problema está en P?
+    4. Vimos que un algoritmo natural para encontrar un divisor que termine en 3 de un número n tarda O(n) pasos ¿Esto significa que el problema está en P?
 
-        El problema de este problema(valga la redundancia) es que dividir es una operación que se prueba tarda tiempo poly(n), pero chequear que un número termina en 3 tarda tiempo O(n). El problema está claramente en NP y se aprecia que, a priori, no parece estar en P. De esto se puede concluir que construir aparentemente es más laborioso que verificar.
+        No estaría en P porque hace O(N) iteraciones, y la longitud de n(n refiriéndome al número n) es exponencial respecto de N.
 
     5. Vimos que utilizando una MTN (MT no determinística),un algoritmo natural para encontrar un circuito de Hamilton en un grafo G tarda O(n²) pasos ¿Esto  significa que el problema está en P?
 
@@ -25,13 +25,15 @@
 
         Una solución a este problema podría ser, usando una MTN, que en cada rama se realice una permutación distinta. La idea es, que en cada rama, se realice el chequeo si la disposición de vértices representa(o no) isomorfismo. Si alguna rama acepta, significa que existe una combinación tal que los grafos serían idénticos salvo por el orden de sus vértices. De esta forma, tenemos que una de las ramas podría ser (1,2), (2,3), (3,4) y (4,1); otra podría ser (1,2), (2,4), (4,3) y (3,1); y así siguiendo. Hay ramas que aceptarán y ramas que rechazarán. Con que una acepte es suficiente.
 
+        //PREGUNTAR SI SÍ O SÍ HAY QUE HACER LA PERMUTACIÓN.
+
     7. Ligado al inciso anterior, considerando ahora el problema de los grafos no isomorfos, se pide mostrar un certificado asociado al problema ¿Es suscinto?
 
-        Ante todo, no hay forma de dar un certificado suscinto de este problema porque es EXP, solo puedo dar certificado suscinto de problemas de NP. Si tuviera que dar un certificado, podría ser aquel en que, teniendo una MTN, rechazara en todas sus ramas, es decir, no hubiera ninguna combinación de vértices que hiciera que el grafo sea isomorfo. Sin embargo, para que sea suscinto, debería dar todas las combinaciones, y no puedo porque 
+        El certificado en este caso son TODAS las permutaciones, concatenadas. Esto no es suscinto, es exponencial respecto del input. Además, la verificación tampoco es polinomial.
 
     8. Probar que la clase P es cerrada con respecto a la operación de complemento.
 
-        Podría probar esto usando dos MT, M1 y M2, en la que M1 representa una MT que contiene a M2. M1 recibe un input w, el cual es computado por M2. Si M2 acepta, entonces M1 rechaza; y si M2 rechaza, M1 acepta. De esta manera queda probada la operación de complemento. 
+        Podría probar esto usando dos MT, M1 y M2, en la que M1 representa una MT que contiene a M2. M1 recibe un input w, el cual es computado por M2. Si M2 acepta, entonces M1 rechaza; y si M2 rechaza, M1 acepta. La idea es que M1 permute los estados finales de M2. De esta manera queda probada la operación de complemento. 
 
 2. Probar que si T₁(n) = O(T₂(n)), entonces TIME(T₁(n)) ⊆ TIME(T₂(n)).
 _Ayuda: usar las definiciones estudiadas para probar la inclusión entre los conjuntos indicados._
