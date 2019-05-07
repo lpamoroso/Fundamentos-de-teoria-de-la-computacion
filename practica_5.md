@@ -95,6 +95,8 @@ _Comentario: φ está en la FNC si es una conjunción de disyunciones de variabl
     No termino de entender el problema, pero reducir de L₁ a L₂, siendo que L₁ ∈ NPC y L₂ ∈ NP, a mi me parece que no se puede porque esto implicaría que L₂ es tan o más difícil que L₁, cosa que no es cierta, ya que los problemas de NP son más fáciles que los de NPC. Dicho de otra manera, NPC es siempre más difícil que NP.  
     Ahora bien, puede ser que si bien L₂ perteneciera a NP, todo problema de NP pudiera reducirse a L₂. En este caso, en este caso, L₂ pertenece a NP, pero tiene características extras que hacen que también pertenezca a otra clase de problemas: la clase NPC. Esto hace que la reducción sea posible ya que L₂ sería tan difícil como L₁. Sin embargo, si L₂ solo perteneciera a NP, la reducción de L₁ a L₂ no sería posible.
 
+    //PEDIR EXPLICACIÓN MAÑANA. *** Bien conciso. L2 está en NP. Falta ver que es NP-difíicl. Por la reducción hipótesis, al ser L1 NP-completo, se cumple que L2 es NP-difícil (teorema visto en clase). Listo.
+
 8. En la Clase 6 quedó planteado como ejercicio probar que si L₁ ∈ NPC y L₂ ∈ NPC, entonces se cumple tanto L₁ αₚ L₂ como L₂ αₚ L₁. Probarlo.
 
     Al ser los dos de NPC, las reducciones se cumplen por definición.
