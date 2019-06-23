@@ -61,7 +61,7 @@
         P = El alumno asiste a clase.
         Q = El alumno opta por un examen libre.
 
-        (P ⋀ Q)
+        (P ⋁ Q)
     
     Seleccione de la lista anterior un par de enunciados que tengan la misma forma, y un par de enunciados que tengan el mismo significado.
 
