@@ -114,3 +114,26 @@
     2. ¿Tendrá suerte Juan?
 
     _Idea: escríbalo como forma argumentativa y determine si es válida o inválida_
+
+    Idem el punto anterior. Primero declaro las variables:
+
+    P = Juan tiene suerte
+    Q = Llueve.
+    R = Juan aprueba.
+    S = Juan estudia.
+
+    Luego convierto a símbolos cada enunciado:
+
+    * Si Juan tiene suerte y llueve entonces estudia.
+
+        ((P ⋀ Q) → S)
+
+    * Juan aprobará si y sólo si estudia o tiene suerte.
+
+        (R ↔ (S ⋁ P))
+
+    * Si Juan no tiene suerte entonces no llueve.
+
+        (⌐P → ⌐Q)
+
+    Ninguno de los enunciados representa una forma argumentativa válida. PREGUNTAR CÓMO SEGUIR. 
