@@ -81,6 +81,29 @@
     
     _Idea: escríbalo como forma argumentativa y determine si es válida o inválida._
 
+    Primero considero las siguientes variables:
+
+    P = La página web tiene un error.
+    Q = El examen de álgebra es el 2 de julio.
+    S = El examen de álgebra es el 14 de julio.
+    T = El período de exámenes termina el 10 de julio.
+
+    Paso a construir los enunciados:
+
+    * La página web tiene un error o el examen de álgebra no es el 2 de julio.
+
+        (P ⋁ ⌐Q)
+
+    * Si el examen de álgebra es el 2 de julio entonces la página web tiene un error.
+
+        (Q → P)
+
+    * El examen de álgebra es el 14 de julio si y sólo si la página web tiene un error y el período de exámenes no termina el 10 de julio.
+
+        (S ↔ (P ⋀ ⌐T))
+
+    El primer enunciado es una forma argumentativa válida, los otros dos no lo son. PREGUNTAR CÓMO SEGUIR.
+
 3. Se tienen las siguientes premisas:
     * Si Juan tiene suerte y llueve entonces estudia.
     * Juan aprobará si y sólo si estudia o tiene suerte.
