@@ -13,6 +13,8 @@
     1. Si v(A ⋀ B) = F y v(A ⋁ B) = V entonces v(A) = v(⌐B)?
     2. Si v(A → B) = F y v(A ⋁ B) = V entonces v(A) = v(⌐B)?
 
+    Nota: v es una función de valuación.
+
 3. Para las tablas dadas a continuación, encontrar alguna fbf de la Lógica de Enunciados que las tenga por tablas de verdad.
 
     _Ayuda: alcanza con usar p, q, ⋁, ⋀, ⌐_
