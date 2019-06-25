@@ -21,6 +21,8 @@
 
     ![tablas_verdad](img/tablas_verdad.png)
 
+    La primera tabla representa (p ⋁ q); la segunda, ⌐(p ⋁ q); la tercera, ⌐(p ⋁ q) ⋁ (p ⋁ q); y la cuarta, ⌐(p ⋀ q) ⋁ ⌐(p ⋀ q).
+
 4. Sean A, B, C y D formas enunciativas. Se sabe que A → B es una contradicción y que C → D es una tautología. Determinar, si es posible, cuáles de las siguientes formas enunciativas son tautologías y cuáles contradicciones. Justificar las respuestas.
 
     1. (C → B) ⋁ (D → B)
