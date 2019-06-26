@@ -48,24 +48,24 @@
 
     7. Para aprobar Lógica, el alumno debe asistir a clase, desarrollar un cuaderno de prácticas aceptable y demostrar que dicho cuaderno ha sido desarrollado por él; o desarrollar un cuaderno de prácticas aceptable y aprobar el examen final.
 
-        p = El alumno asiste a clase.
-        q = El alumno desarrolla un cuaderno de prácticas aceptable.
-        r = El alumno demuestra que el cuaderno ha sido desarrollado por él.
-        s = El alumno aprueba el examen final.
-        T = El alumno aprueba Lógica.
+        p = El alumno asiste a clase.  
+        q = El alumno desarrolla un cuaderno de prácticas aceptable.  
+        r = El alumno demuestra que el cuaderno ha sido desarrollado por él.  
+        s = El alumno aprueba el examen final.  
+        t = El alumno aprueba Lógica.
 
-        ((p ⋀ q ⋀ r) ⋁ (q ⋀ s)) → T
+        ((p ⋀ q ⋀ r) ⋁ (q ⋀ s)) → t
 
     8. El alumno puede asistir a clase u optar por un examen libre.
 
-        p = El alumno asiste a clase.
+        p = El alumno asiste a clase.  
         q = El alumno opta por un examen libre.
 
         (p ⋁ q)
     
-    * Seleccione de la lista anterior un par de enunciados que tengan la misma forma, y un par de enunciados que tengan el mismo significado.
+    Seleccione de la lista anterior un par de enunciados que tengan la misma forma, y un par de enunciados que tengan el mismo significado.
 
-        Los enunciados 2 y 4 tienen la misma forma. Los enunciados 4 y 5, el mismo significado.
+    Los enunciados 2 y 4 tienen la misma forma. Los enunciados 4 y 5, el mismo significado.
 
 2. Se sabe que:
 
@@ -82,9 +82,9 @@
 
     Primero considero las siguientes variables:
 
-    p = La página web tiene un error.
-    q = El examen de álgebra es el 2 de julio.
-    r = El examen de álgebra es el 14 de julio.
+    p = La página web tiene un error.  
+    q = El examen de álgebra es el 2 de julio.  
+    r = El examen de álgebra es el 14 de julio.  
     s = El período de exámenes termina el 10 de julio.
 
     Paso a construir los enunciados:
@@ -112,6 +112,8 @@
     V(ya se daba por defecto) | V | V(puse F, pero por el complemento cambió a V) | F(Ponga lo que ponga me va a dar verdadero) | V | V(ya se daba por defecto) | F(la única manera de que el bicondicional de verdadero)| V | V(ya se daba por defecto.)| F(es el único valor que podía darse) | F(era V pero cambia a F por el complemento. Ya se da por defecto.) | F | F(es el valor que le había asignado a q)
 
     (p ⋁ ⌐q), (q → p), (r ↔ (p ⋀ ⌐s)) ∴ (⌐p → r)
+
+    Siguiendo el razonamiento de arriba se puede concluir que el valor de r es el único posible para asegurar que el enunciado 3 sea verdadero. Así mismo, el valor para p ya viene dado, por lo que el argumento es válido.
 
     (p | ⋁ | ⌐q) | (q | → | p) | (r | ↔ | (p | ⋀ | ⌐s)) | ∴ | (⌐p | → |r)
     :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
