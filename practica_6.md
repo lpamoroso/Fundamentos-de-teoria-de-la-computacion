@@ -82,26 +82,40 @@
 
     Primero considero las siguientes variables:
 
-    P = La página web tiene un error.
-    Q = El examen de álgebra es el 2 de julio.
-    S = El examen de álgebra es el 14 de julio.
-    T = El período de exámenes termina el 10 de julio.
+    p = La página web tiene un error.
+    q = El examen de álgebra es el 2 de julio.
+    r = El examen de álgebra es el 14 de julio.
+    s = El período de exámenes termina el 10 de julio.
 
     Paso a construir los enunciados:
 
     * La página web tiene un error o el examen de álgebra no es el 2 de julio.
 
-        (P ⋁ ⌐Q)
+        (p ⋁ ⌐q)
 
     * Si el examen de álgebra es el 2 de julio entonces la página web tiene un error.
 
-        (Q → P)
+        (q → p)
 
     * El examen de álgebra es el 14 de julio si y sólo si la página web tiene un error y el período de exámenes no termina el 10 de julio.
 
-        (S ↔ (P ⋀ ⌐T))
+        (r ↔ (p ⋀ ⌐s))
 
-    El primer enunciado es una forma argumentativa válida, los otros dos no lo son. PREGUNTAR CÓMO SEGUIR.
+    Paso a redactar los enunciados como formas argumentativas, teniendo en cuenta que s y p son verdaderos:
+
+    (p ⋁ ⌐q), (q → p), (r ↔ (p ⋀ ⌐s)) ∴ q
+
+    Jugando con los valores de verdad, dado p verdadero, si q fuera falsa, por ejemplo, se puede observar que los dos primeros enunciados son verdaderos. Para el tercer enunciado suponiendo s verdadero, por el complemento queda falso. P ya era verdadero así es que esa conjunción queda falsa. Asumo que r es falso para lograr que ese bincondicional sea verdadero y así poder mostrar que dados los enunciados verdaderos, la conclusión es falsa.
+
+    (p | ⋁ | ⌐q | (q | → | p) | (r | ↔ | (p | ⋀ | ⌐s)) | ∴ | q
+    :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+    V(ya se daba por defecto) | V | V(puse F, pero por el complemento cambió a V) | F(Ponga lo que ponga me va a dar verdadero) | V | V(ya se daba por defecto) | F(la única manera de que el bicondicional de verdadero)| V | V(ya se daba por defecto.)| F(es el único valor que podía darse) | F(era V pero cambia a F por el complemento. Ya se da por defecto.) | F | F(es el valor que le había asignado a q)
+
+    (p ⋁ ⌐q), (q → p), (r ↔ (p ⋀ ⌐s)) ∴ (⌐p → r)
+
+    (p | ⋁ | ⌐q) | (q | → | p) | (r | ↔ | (p | ⋀ | ⌐s)) | ∴ | (⌐p | → |r)
+    :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+    V(ya se daba por defecto)| V | V(puse F, pero por el complemento cambió a V)| F(Ponga lo que ponga me va a dar verdadero) | V |V(ya se daba por defecto)| F(la única manera de que el bicondicional de verdadero)| V |V(ya se daba por defecto)|F(es el único valor que podía darse)|F(era V pero cambia a F por el complemento. Ya se da por defecto.)| V |F(era V pero cambia a F por el complemento. Ya se da por defecto.)| V |F(es el único valor que puedo poner en r para garantizar que los enunciados sean verdaderos)
 
 3. Se tienen las siguientes premisas:
     * Si Juan tiene suerte y llueve entonces estudia.
