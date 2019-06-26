@@ -118,11 +118,13 @@
     V(ya se daba por defecto)| V | V(puse F, pero por el complemento cambió a V)| F(Ponga lo que ponga me va a dar verdadero) | V |V(ya se daba por defecto)| F(la única manera de que el bicondicional de verdadero)| V |V(ya se daba por defecto)|F(es el único valor que podía darse)|F(era V pero cambia a F por el complemento. Ya se da por defecto.)| V |F(era V pero cambia a F por el complemento. Ya se da por defecto.)| V |F(es el único valor que puedo poner en r para garantizar que los enunciados sean verdaderos)
 
 3. Se tienen las siguientes premisas:
+
     * Si Juan tiene suerte y llueve entonces estudia.
     * Juan aprobará si y sólo si estudia o tiene suerte.
     * Si Juan no tiene suerte entonces no llueve.
 
     Sabiendo que llueve, responder:
+
     1. ¿Aprobará Juan?
     2. ¿Tendrá suerte Juan?
 
@@ -130,23 +132,39 @@
 
     Idem el punto anterior. Primero declaro las variables:
 
-    P = Juan tiene suerte
-    Q = Llueve.
-    R = Juan aprueba.
-    S = Juan estudia.
+    p = Juan tiene suerte  
+    q = Llueve.  
+    r = Juan aprueba.  
+    s = Juan estudia.  
 
     Luego convierto a símbolos cada enunciado:
 
     * Si Juan tiene suerte y llueve entonces estudia.
 
-        ((P ⋀ Q) → S)
+        ((p ⋀ q) → s)
 
     * Juan aprobará si y sólo si estudia o tiene suerte.
 
-        (R ↔ (S ⋁ P))
+        (r ↔ (s ⋁ p))
 
     * Si Juan no tiene suerte entonces no llueve.
 
-        (⌐P → ⌐Q)
+        (⌐p → ⌐q)
 
-    Ninguno de los enunciados representa una forma argumentativa válida. PREGUNTAR CÓMO SEGUIR. 
+    Finalmente armo la forma argumentativa y la resuelvo:
+
+    ((p ⋀ q) → s), (r ↔ (s ⋁ p)), (⌐p → ⌐q) ∴ r
+
+    Jugando con los valores de verdad, a priori, teniendo que q es verdadero, en el último enunciado cambia a falso por el complemento. Esto hace que el único valor que pueda tomar p para que la implicación sea verdadera es F, pero, como hay una operación de complemento, voy a elegir V. Esto hace que la conjunción del primer enunciado me quede verdadera(tanto p como q son verdaderos), solo resta elegir s, que, como la operación es una implicación, el único valor posible para que ésta sea verdadera es V. Definiendo s completo la disyunción del segundo enunciado que también da verdadero, ya que en este caso, tanto s como p son verdaderos. Solo resta elegir el valor de r para que se cumpla el bicondicional. Al ser verdadera una de las partes, la otra también necesariamente debe serlo para que de verdadero, por lo que r queda como verdadero y se cumple que es un argumento válido.
+
+    ((p | ⋀ | q) | → | s) | (r | ↔ | (s | ⋁ | p)) | (⌐p | → | ⌐q) | ∴ | r
+    :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+    V|V|V|V|V|V|V|V|V|V|F|V|F|V|V
+
+    ((p ⋀ q) → s), (r ↔ (s ⋁ p)), (⌐p → ⌐q) ∴ p
+
+    Siguiendo el razonamiento anterior, también se puede probar con eso que el único valor posible para p es verdadero y que, por ende, el argumento es válido.
+
+    ((p | ⋀ | q) | → | s) | (r | ↔ | (s | ⋁ | p)) | (⌐p | → | ⌐q) | ∴ | p
+    :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+    V|V|V|V|V|V|V|V|V|V|F|V|F|V|V
