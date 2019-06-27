@@ -26,7 +26,20 @@
 2. Fundamentar:
 
     1. Si v(A ⋀ B) = F y v(A ⋁ B) = V entonces v(A) = v(⌐B)?
+
+        Esto es verdadero y se puede pensar de la siguiente forma:
+        1. Si v(A ⋀ B) = F, entonces hay que pensar en las combinaciones VF, FV y FF.
+        2. Dado que v(A ⋁ B) = V, es que pueden darse las combinaciones VV, FV y VF.
+        3. La intersección de lo anterior nos dice que estamos hablando de las combinaciones FV o VF o, en otras palabras, que cuando A es verdadero, B es falso y viceversa.
+        4. Se concluye que v(A) = v(⌐B) es verdadero.
+
     2. Si v(A → B) = F y v(A ⋁ B) = V entonces v(A) = v(⌐B)?
+
+        También es verdadero. La forma de pensarlo es similar al inciso anterior:
+        1. Si v(A → B) = F, entonces hay que pensar en la combinación VF.
+        2. Dado que v(A ⋁ B) = V, es que pueden darse las combinaciones VV, FV y VF.
+        3. La intersección de lo anterior nos dice que estamos hablando de la combinación VF o, en otras palabras, que cuando A es verdadero, B es falso.
+        4. Se concluye que v(A) = v(⌐B) es verdadero.
 
     Nota: v es una función de valuación.
 
