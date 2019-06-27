@@ -5,8 +5,23 @@
 1. Retome el Ejercicio 1 de la Práctica 1:
 
     1. Seleccione un par de enunciados que sean lógicamente equivalentes(que tengan el mismo significado). Demuéstrelo mediante tablas de verdad.
+
+        Enunciados 2 y 4. Ambos siguen la estructura (p → q). Su tabla de verdad es la siguiente:
+
+        (p | → | q)
+        :---:|:---:|:---:
+        V | V | V
+        F | V | V
+        V | F | F
+        F | V | F
+
     2. Para el ítem ii, construya dos enunciados que sean lógicamente equivalentes.
+
+        Dos ejemplos son (⌐p ⋁ q) y (⌐q → ⌐p).
+
     3. Para el ítem vii, construya dos enunciados que sean lógicamente equivalentes.
+
+        Siguiendo la lógica de arriba, dos ejemplos son (⌐((p ⋀ q ⋀ r) ⋁ (q ⋀ s)) ⋁ t) y (⌐t → ⌐((p ⋀ q ⋀ r) ⋁ (q ⋀ s))).
 
 2. Fundamentar:
 
