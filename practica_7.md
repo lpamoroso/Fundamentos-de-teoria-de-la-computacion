@@ -54,5 +54,13 @@
 4. Sean A, B, C y D formas enunciativas. Se sabe que A → B es una contradicción y que C → D es una tautología. Determinar, si es posible, cuáles de las siguientes formas enunciativas son tautologías y cuáles contradicciones. Justificar las respuestas.
 
     1. (C → B) ⋁ (D → B)
-    2. (A → C ) ⋁ (B → D)
+
+        Pueden darse las combinaciones VF VF, VF FF, FF VF y FF FF. La primera combinación dará falso; cualquiera de las otras tres restantes, verdadero.
+
+    2. (A → C) ⋁ (B → D)
+
+        En este caso, estamos ante una tautología. Pueden darse los casos VV FV, VV FF, VF FV y VF FF. Cualquiera de los casos es verdadero.
+
     3. (A → D) ⋀ (B → D)
+
+        Acá se dan las combinaciones VV FV y VF FF. La primera combinación es verdadera; la segunda, falsa.
