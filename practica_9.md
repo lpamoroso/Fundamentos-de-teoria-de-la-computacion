@@ -5,9 +5,16 @@
 1. Expresar en un lenguaje de predicados de primer orden las siguientes afirmaciones:
 
     1. “Algunas aves no vuelan”
+
+        ∃(x) ⌐ Volar(x)
+
     2. “No todas las aves vuelan”
 
+        ⌐ ∀(x) Volar(x)
+
     Analizar la relación entre ambas. Mostrar cómo se puede transformar una expresión en la otra.
+
+        Decir no todos es lo mismo que algunos. PREGUNTAR QUE MÁS ACOTAR.
 
 2. Escribir las siguientes proposiciones usando un lenguaje de predicados de primer orden:
     1. El cero es el menor natural.
@@ -30,7 +37,7 @@
 
 4. Dar interpretaciones para los siguientes lenguajes de primer orden, y traducir en cada caso las fórmulas presentadas a oraciones apropiadas en lenguaje natural.
     1. ∀(x)∀(y)(A<sub>1</sub><sup>2</sup>(x, y) →  A<sub>1</sub><sup>2</sup>(y, x))
-    2. ∀(x) A1 2(x, x)
+    2. ∀(x) A<sub>1</sub><sup>2</sup>(x, x)
     3. ∀(x)∀(y)∀(z)(A<sub>1</sub><sup>2</sup>(x, y) ⋀ A<sub>1</sub><sup>2</sup>(y, z) → A<sub>1</sub><sup>2</sup>(x, z))
     4. ∀(x)(A<sub>1</sub><sup>2</sup>(x, c) → A<sub>1</sub><sup>2</sup>(x, f(y)))
     5. ∀(x) ⌐ A<sub>1</sub><sup>2</sup>(x, x)
