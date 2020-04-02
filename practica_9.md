@@ -6,11 +6,11 @@
 
     1. “Algunas aves no vuelan”
 
-        ∃(x) ⌐ Volar(x)
+        ∃(x) ⌐ volar(x)
 
     2. “No todas las aves vuelan”
 
-        ⌐ ∀(x) Volar(x)
+        ⌐ ∀(x) volar(x)
 
     Analizar la relación entre ambas. Mostrar cómo se puede transformar una expresión en la otra.
 
@@ -18,12 +18,22 @@
 
 2. Escribir las siguientes proposiciones usando un lenguaje de predicados de primer orden:
     1. El cero es el menor natural.
+
+        ∀(x) es_menor(0,x)
+
     2. El conjunto vacío está incluido en cualquier conjunto.
+
+        ∀(x) esta_incluido(conjunto_vacio, x)
+
     3. Si se prueba una propiedad para el cero y luego se prueba que esa misma propiedad vale para el número n+1 si vale para n, entonces se ha probado que la propiedad vale para cualquier natural.
     4. Si hay un número natural que cumple una cierta propiedad, entonces hay un mínimo natural que cumple esa propiedad.
 
+        ∃(x) cumple_propiedad(x) → ∃(y) cumple_propiedad(y)
+
 3. Expresar en un lenguaje de predicados de primer orden el conocimiento asociado a las siguientes situaciones:
     1. Ningún dragón que viva en un zoológico es feliz. Cualquier animal que encuentre gente amable es feliz. Las personas que visitan los zoológicos son amables. Los animales que viven en zoológicos encuentran personas que visitan zoológicos.
+
+        ⌐ ∃(dragon) vive_en(zoologico) → dragon es(feliz). ∀(animal) encuentra(gente) ⋀ es(amable) → animal es(feliz). ∀(gente) visita(zoologico) es(amable). ∀(animal) vive_en(zoologico) → encuentra(gente vive_en(zoologico))
 
     Encontrar suposiciones adicionales que permitan concluir que ningún dragón vive en un zoológico.
 
@@ -42,3 +52,5 @@
     4. ∀(x)(A<sub>1</sub><sup>2</sup>(x, c) → A<sub>1</sub><sup>2</sup>(x, f(y)))
     5. ∀(x) ⌐ A<sub>1</sub><sup>2</sup>(x, x)
     6. ∀(x)∀(y) A<sub>1</sub><sup>2</sup>(x, y)
+
+PREGUNTAR PUNTO 4
